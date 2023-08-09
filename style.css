@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    background-color: hsl(0, 0%, 94%);
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+  margin:0px 10px;
+}
+/*top nav area start*/
+nav.top-nav{
+    padding: 1.5rem;
+    background-color: white;
+    margin-bottom: 1px;
+}
+nav.top-nav{
+    display:flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration:none;
+
+  }
+  .nav-left a:visited{
+    color:black;
+  }
+  
+  a, a:visited{
+    color: black;
+
+  }
+  .free{
+    color:#0336c0;
+  }
+
+  .free:visited{
+    color:#0336c0;
+  }
+
+  .nav-left{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+  .nav-right{
+    display: flex;
+    gap: 2rem;
+  }
+
+  /*end of top nav*/
+
+  /*start of second nav*/
+  nav.second-nav{
+    display: flex;
+    padding: 10px 2.5rem;
+    gap:2rem;
+    justify-content: flex-start;
+    background-color: white;
+    font-size: .98rem;
+  }
+  /*end of second nav*/
+
+/*start of main*/
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.main-img{
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+img{
+  display:block;
+  max-width:100%;
+  max-height:100%;
+}
+
+.main-text{
+  padding: 2rem;
+}
+
+.main-text h1{
+  font-size: 1.5rem;
+  max-width: 60ch;
+  line-height: 1.4;
+}
+
+.main-text a, .main-text a:visited{
+  color: #0336c0;
+}
+
+.main-text p{
+  font-size: 1.05rem;
+  max-width: 80ch;
+}
+/*end of main */
