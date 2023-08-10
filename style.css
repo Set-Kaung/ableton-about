@@ -1,121 +1,137 @@
-body{
-    margin: 0px;
-    background-color: hsl(0, 0%, 94%);
-    font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;
-    overflow: scroll;
+html{
+  -webkit-font-smoothing: antialiased;
 }
-.main{
-  margin:0px 10px;
+body {
+  margin: 0px;
+  background-color: hsl(0, 0%, 94%);
+  font-family: 'Roboto', sans-serif;
+  overflow: scroll;
 }
+
+.main {
+  margin: 0px 10px;
+}
+
 /*top nav area start*/
-nav.top-nav{
-    padding: 1.5rem;
-    background-color: white;
-    margin-bottom: 1px;
+nav.top-nav {
+  padding: 1.5rem;
+  background-color: white;
+  margin-bottom: 1px;
 }
+
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
-nav.top-nav{
-    display:flex;
-    justify-content: space-between;
-  }
-  a{
-    text-decoration:none;
 
-  }
-  .nav-left a:visited{
-    color:black;
-  }
-  
-  a, a:visited{
-    color: black;
+nav.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  }
-  .free{
-    color:#0336c0;
-  }
+a {
+  text-decoration: none;
 
-  .free:visited{
-    color:#0336c0;
-  }
+}
 
-  .nav-left{
-    display: flex;
-    gap: 3rem;
-    justify-content: space-evenly;
-  }
-  .nav-right{
-    display: flex;
-    gap: 2rem;
-  }
+.nav-left a:visited {
+  color: black;
+}
 
-  /*end of top nav*/
+a,
+a:visited {
+  color: black;
 
-  /*start of second nav*/
-  nav.second-nav{
-    display: flex;
-    padding: 10px 2.5rem;
-    gap:2rem;
-    justify-content: flex-start;
-    background-color: white;
-    font-size: .98rem;
-  }
-  /*end of second nav*/
+}
+
+.free {
+  color: #0336c0;
+}
+
+.free:visited {
+  color: #0336c0;
+}
+
+.nav-left {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.nav-right {
+  display: flex;
+  gap: 2rem;
+}
+
+/*end of top nav*/
+
+/*start of second nav*/
+nav.second-nav {
+  display: flex;
+  padding: 10px 2.5rem;
+  gap: 2rem;
+  justify-content: flex-start;
+  background-color: white;
+  font-size: .98rem;
+}
+
+/*end of second nav*/
 
 /*start of main*/
-.page{
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   max-width: 100%;
 }
-.main-img{
+
+.main-img {
   width: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.05rem;
 }
-img{
-  display:block;
-  max-width:100%;
+
+img {
+  display: block;
+  max-width: 100%;
   /* max-height:auto; */
 }
 
-.main-text{
+.main-text {
   padding: 2rem;
   text-align: justify;
 }
 
-.main-text h1{
+.main-text h1 {
   font-size: 1.5rem;
   max-width: 60ch;
   line-height: 1.4;
 }
 
-.main-text a, .main-text a:visited{
+.main-text a,
+.main-text a:visited {
   color: #0336c0;
 }
 
-.main-text p{
+.main-text p {
   font-size: 1.05rem;
   max-width: 80ch;
 }
 
 /*collage*/
-.collage-products{
+.collage-products {
   display: flex;
   max-width: 100%;
   gap: 5px;
 }
-div.collage-background{
+
+div.collage-background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,11 +142,12 @@ div.collage-background{
   left: 50%;
 }
 
-div.collage-background img{
+div.collage-background img {
   min-width: 30%;
   max-height: auto;
 }
-div.first-image{
+
+div.first-image {
   padding: 2rem;
   min-width: 50%;
   position: relative;
@@ -141,7 +158,7 @@ div.first-image{
 /*end of collage*/
 
 /*media*/
-.media-video{
+.media-video {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,62 +167,204 @@ div.first-image{
   min-width: 100%;
 }
 
-div.wrapper{
+div.wrapper {
   min-width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.media-video iframe{
+.media-video iframe {
   min-width: 60%;
   aspect-ratio: 16/9;
 }
-.media-video div.caption-container{
+
+.media-video div.caption-container {
   padding: .5em;
 }
 
-.media-video-caption{
+.media-video-caption {
   font-size: .875rem;
   font-weight: bold;
 }
+
 /*end of media*/
+
+/*about text*/
+.body-text {
+  text-align: justify;
+  text-justify: distribute;
+  max-width: 50dvw;
+}
+
+
+.body-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/*end of about text*/
+/*collage people*/
+div.collage-people {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-people {
+  position: relative;
+  width: 100%;
+}
+
+.people-background {
+  min-height: 100%;
+  max-width: 50%;
+  min-width: 50%;
+  background-color: #b6ffc0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.left-collage {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  right: 30%;
+  top: 0;
+  z-index: 1;
+}
+
+.studio-large {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  z-index: 1;
+  min-width: 50%;
+}
 
 /*end of main */
 
 /*footer*/
-footer{
+.footer-separator hr {
+  border-color: hsl(0, 0%, 94%);
+  border-style: solid;
+  height: .02em;
+  background-color: hsl(0, 0%, 94%);
+}
+
+footer {
   padding: 1.25rem;
   font-size: .98rem;
   justify-self: flex-end;
+  width: 100%;
 }
+
+.grid-container {
+  padding: 1.5rem;
+  margin: 0 5rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0em 1em;
+}
+.logo img{
+  height: auto;
+  width: 35%;
+}
+.misc {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: .8em 1em;
+}
+
+li{
+  font-size: 1.35rem;
+}
+
+.misc-links li:nth-child(n+2) {
+  margin-top: 10px; /* Adjust the value as needed */
+}
+
+.misc-links li::after{
+  content: '\00a0›';
+}
+
+.social-links{
+  display: flex;
+  gap: .625em;
+}
+
+
+.social-links li{
+  min-width: 3.5rem;
+  max-height: 3.55rem;
+}
+
+
+.social--facebook{
+  background-color: #3477F2;
+}
+.social--twitter{
+  background-color: #1DA1F2;
+}
+
+.social--youtube{
+  background-color: #FF001D;
+}
+
+.social--instagram{
+  background-color: #F77737;
+}
+
 /*end of footer*/
 
 @media all and (max-width:500px) {
-  nav{
+  nav {
     display: flex;
     flex-direction: column;
   }
-  nav .nav-left{
+
+  nav .nav-left {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1rem 0;
   }
 
-  .nav-left>*{
+  .nav-left>* {
     flex: 1 1 0;
   }
-  nav .nav-right{
+
+  nav .nav-right {
     justify-content: space-evenly;
   }
-  .collage-products{
+
+  .collage-products {
     max-width: 100dvw;
     gap: 0;
   }
-  div.collage-background{
+
+  div.collage-background {
     min-width: 5dvw;
     z-index: 0;
   }
-  div.first-image{
+
+  div.first-image {
     padding: 0;
     /* min-width: 40dvw; */
   }
