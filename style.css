@@ -3,6 +3,7 @@ body{
     background-color: hsl(0, 0%, 94%);
     font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
+    overflow: scroll;
 }
 .main{
   margin:0px 10px;
@@ -12,6 +13,13 @@ nav.top-nav{
     padding: 1.5rem;
     background-color: white;
     margin-bottom: 1px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 nav.top-nav{
     display:flex;
@@ -66,22 +74,24 @@ nav.top-nav{
   flex-direction: column;
   align-items: center;
   background-color: white;
+  max-width: 100%;
 }
 .main-img{
   width: 99%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1.05rem;
 }
 img{
   display:block;
   max-width:100%;
-  max-height:100%;
+  /* max-height:auto; */
 }
 
 .main-text{
   padding: 2rem;
+  text-align: justify;
 }
 
 .main-text h1{
@@ -98,4 +108,105 @@ img{
   font-size: 1.05rem;
   max-width: 80ch;
 }
+
+/*collage*/
+.collage-products{
+  display: flex;
+  max-width: 100%;
+  gap: 5px;
+}
+div.collage-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-width: 50%;
+  background-color: #fbffa7;
+  position: relative;
+  left: 50%;
+}
+
+div.collage-background img{
+  min-width: 30%;
+  max-height: auto;
+}
+div.first-image{
+  padding: 2rem;
+  min-width: 50%;
+  position: relative;
+  right: 50%;
+}
+
+
+/*end of collage*/
+
+/*media*/
+.media-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  min-width: 100%;
+}
+
+div.wrapper{
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-video iframe{
+  min-width: 60%;
+  aspect-ratio: 16/9;
+}
+.media-video div.caption-container{
+  padding: .5em;
+}
+
+.media-video-caption{
+  font-size: .875rem;
+  font-weight: bold;
+}
+/*end of media*/
+
 /*end of main */
+
+/*footer*/
+footer{
+  padding: 1.25rem;
+  font-size: .98rem;
+  justify-self: flex-end;
+}
+/*end of footer*/
+
+@media all and (max-width:500px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  nav .nav-left{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+  }
+
+  .nav-left>*{
+    flex: 1 1 0;
+  }
+  nav .nav-right{
+    justify-content: space-evenly;
+  }
+  .collage-products{
+    max-width: 100dvw;
+    gap: 0;
+  }
+  div.collage-background{
+    min-width: 5dvw;
+    z-index: 0;
+  }
+  div.first-image{
+    padding: 0;
+    /* min-width: 40dvw; */
+  }
+}
